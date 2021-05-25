@@ -95,7 +95,7 @@
         * JSON request -> {'plate':''}
         * JSON response -> {
             'plate':plate,
-            'plate_date',
+            'plate_date':'',
             'brand':'',
             'model':'',
             'average_consumption':'',

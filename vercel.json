@@ -51,11 +51,13 @@
             "src":"/api/vehicle/get_actions",
             "dest": "/index.js",
             "methods":["POST"]
+        },
+        {
+            "src":"/api/external/vehicle-by-plate",
+            "dest": "/index.js",
+            "methods":["POST"]
         }
-        
-
-        
-        
+     
        
     ]
 
