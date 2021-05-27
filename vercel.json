@@ -56,9 +56,17 @@
             "src":"/api/external/vehicle-by-plate",
             "dest": "/index.js",
             "methods":["POST"]
-        }
-     
-       
+        },
+        {
+            "src":"/api/company/chart1",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
+            "src":"/api/company/chart2",
+            "dest": "/index.js",
+            "methods":["POST"]
+        }       
     ]
 
 }
