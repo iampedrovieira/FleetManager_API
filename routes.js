@@ -15,6 +15,9 @@ routes.post("/api/company/vehicle", company.get_company_vehicle);
 routes.post("/api/company/employees", company.get_company_employees);
 routes.post("/api/company/chart1", company.get_company_chart1);
 routes.post("/api/company/chart2", company.get_company_chart2);
+routes.post("/api/company/chart3", company.get_company_chart3);
+routes.post("/api/company/chart4", company.get_company_chart4);
+routes.post("/api/company/chart5", company.get_company_chart5);
 
 routes.post("/api/vehicle/get_info", vehicle.get_vehicle_info);
 routes.post("/api/vehicle/get_trips", vehicle.get_vehicle_trips);
