@@ -76,8 +76,8 @@ module.exports = {
               admin = {
                 "employee_key": results[0][0].company_key,
                 "employee_name": results[0][0].company_name +" Boss",
-                "phone_number": " ",
-                "employee_address": " ",
+                "phone_number": ".",
+                "employee_address": ".",
                 "picture": null,
                 "company_key": results[0][0].company_key,
                 "on_service": null
