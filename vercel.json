@@ -58,10 +58,36 @@
             "methods":["POST"]
         },
         {
+            "src":"/api/company/chart1",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
+            "src":"/api/company/chart2",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
+            "src":"/api/company/chart3",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
+            "src":"/api/company/chart4",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
+            "src":"/api/company/chart5",
+            "dest": "/index.js",
+            "methods":["POST"]
+        },
+        {
             "src":"/api/employee/chat",
             "dest": "/index.js",
             "methods":["POST"]
         }
+        
     ]
 
 }

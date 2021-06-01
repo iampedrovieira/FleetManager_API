@@ -72,8 +72,17 @@ module.exports = {
             replacements: { companyKey:companyKey}})
           .then(async(results) => {
             if(results[0].length>0){
-            
-              final_results.push(results[0])
+              
+              admin = {
+                "employee_key": results[0][0].company_key,
+                "employee_name": results[0][0].company_name +" Boss",
+                "phone_number": " ",
+                "employee_address": " ",
+                "picture": null,
+                "company_key": results[0][0].company_key,
+                "on_service": null
+              }
+              final_results.push(admin)
               return res.json(final_results);
 
             }
