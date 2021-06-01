@@ -9,6 +9,7 @@ routes.post('/api/users/login',login.login)
 
 routes.post('/api/employee/info',users.get_employee_info)
 routes.post('/api/employee/trips',users.get_employee_trips)
+routes.post('/api/employee/chat',users.get_chat_users)
 
 routes.post('/api/company/info',users.get_company_info)
 routes.post('/api/company/vehicle',company.get_company_vehicle)

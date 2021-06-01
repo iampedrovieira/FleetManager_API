@@ -56,9 +56,12 @@
             "src":"/api/external/vehicle-by-plate",
             "dest": "/index.js",
             "methods":["POST"]
+        },
+        {
+            "src":"/api/employee/chat",
+            "dest": "/index.js",
+            "methods":["POST"]
         }
-     
-       
     ]
 
 }

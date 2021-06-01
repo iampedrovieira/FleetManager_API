@@ -55,4 +55,35 @@ module.exports = {
       return res.json("Erro interno");
     }
   },
+  async get_chat_users(req, res) {
+    const { companyKey,userKey } = req.body;
+    var final_results
+    try{
+      await connection
+      .query("Select * from employee where company_key=:companyKey and employee_key!=:employee", {
+        replacements: { companyKey:companyKey,employee:userKey },
+      })
+      .then(async(results) => {
+        if(results[0].length>0){
+          final_results=results[0]
+          
+          await connection
+          .query("Select * from company where company_key=:companyKey", {
+            replacements: { companyKey:companyKey}})
+          .then(async(results) => {
+            if(results[0].length>0){
+            
+              final_results.push(results[0])
+              return res.json(final_results);
+
+            }
+          });
+          
+         }
+      });
+    }catch(error){
+      console.log(error)
+      return res.json("Erro interno");
+    }
+  },
 }
